@@ -2,7 +2,7 @@ import 'dart:convert';
 
 class TvSeries {
   int id;
-  String name; // En series es 'name', no 'title'
+  String name;
   String overview;
   String posterPath;
   double voteAverage;

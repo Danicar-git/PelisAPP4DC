@@ -32,7 +32,6 @@ class ApiService {
     var url = Uri.parse('${Api.baseUrl}${ApiEndPoints.popularActors}?api_key=${Api.apiKey}&language=en-US');
     var response = await http.get(url);
     if (response.statusCode == 200) {
-     
       var data = jsonDecode(response.body);
       
       List<dynamic> list = data['results'];

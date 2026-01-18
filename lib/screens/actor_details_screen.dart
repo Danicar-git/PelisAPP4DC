@@ -17,10 +17,10 @@ class ActorDetailsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xff1f2326),
       body: SafeArea(
-        child: SingleChildScrollView( // Añadimos Scroll vertical por si la lista es larga
+        child: SingleChildScrollView(
           child: Column(
             children: [
-              // --- CABECERA (Flecha y Título) ---
+              // cabecera
               Padding(
                 padding: const EdgeInsets.all(24),
                 child: Row(
@@ -38,7 +38,7 @@ class ActorDetailsScreen extends StatelessWidget {
                 ),
               ),
 
-              // --- FOTO DEL ACTOR ---
+              // foto actor
               ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: Image.network(
@@ -52,7 +52,7 @@ class ActorDetailsScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               
-              // --- NOMBRE DEL ACTOR ---
+              // nombre actor
               Text(
                 actor.name,
                 style: const TextStyle(
